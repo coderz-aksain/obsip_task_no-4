@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.heading{
+
+    font-size:50px;
+    color: #000000;
+    box-shadow: 10px 15px 10px 1px #3f4851f0;
+    border: 2px solid red;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    background: transparent;
+    position: relative;
+    background-position: contain;
+    /* height: 1px;
+    width: 1px;
+     */
+    
+}
+/* .video{
+    height: 500px;
+} */
+.heading{
+    /* z-index: 9;
+    top: -0.8em;
+    right: 1em; */
+    animation-name:headingRotate;
+    animation-duration: 3s;
+    animation-iteration-count:infinite
+  }
+@keyframes headingRotate{
+0%{
+    transform:rotateZ(0deg) translateY(0px);
+    
+}
+
+50%{
+    transform: rotateZ(180deg) translateY(-12px);
+}
+
+100%{
+    transform: rotateZ(360deg) translateY(0px);
+}
+}
+.calculator{
+    margin-top: 10px;
+    background: #020008;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 10px 15px 10px 1px #3f4851f0;
+      border: 5px solid black;
+      
+
+}
+.calculator form input{
+   
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 0px #863322f0;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+.calculator form input:hover{
+    transform: translateY(-5px);
+    color: rgb(248, 248, 248);
+    background-color: rgba(0, 139, 139, 0.233);
+    box-shadow: 5px 5px 7px 0px #7993c4f0;
+}
+
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    background-color: rgb(129, 137, 145);
+    box-shadow: 5px 5px 7px 0px #a41919f0;
+
+}
+form .display input{
+    color: black;
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 150px;
+
+}
+form input.equal:hover{
+    color: rgb(248, 248, 248);
+    background-color: rgba(0, 139, 139, 0.276);
+    box-shadow: 5px 5px 7px 0px #0f3b94d3;
+}
+
+form input.operator{
+    color:#33ffd8;
+}
